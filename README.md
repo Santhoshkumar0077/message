@@ -9,6 +9,7 @@ A real-time chat application built with MongoDB, Express, React, and Node.js, us
 - Responsive UI
 - Socket.IO Integration
 - REST API with Express
+- Securly login with email OTP
 
 ##  Tech Stack
 
