@@ -24,7 +24,7 @@ app.use("/api/auth", userRoute);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://message-eight-chi.vercel.app/",
+    origin: "https://message-eight-chi.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
