@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://message-eight-chi.vercel.app",
     credentials: true,
   })
 );
@@ -24,7 +24,7 @@ app.use("/api/auth", userRoute);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://message-eight-chi.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
   },
