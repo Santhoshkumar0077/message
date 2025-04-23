@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://message-o80p.onrender.com");
 const Home = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [loggedUser, setLoggedUser] = useState(null);
