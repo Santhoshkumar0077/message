@@ -11,14 +11,16 @@ import Chat from "./models/Chat.js";
 
 dotenv.config();
 const app = express();
+
+app.use(cookieParser());
 app.use(express.json());
+
 app.use(
   cors({
     origin: "https://message-eight-chi.vercel.app",
     credentials: true,
   })
 );
-app.use(cookieParser());
 app.use("/api/auth", authRoute);
 app.use("/api/auth", userRoute);
 const server = http.createServer(app);
